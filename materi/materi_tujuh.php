@@ -15,18 +15,18 @@
     }
 
     .ganjil {
-        background: lightgray;
+        background: grey;
     }
 
     .genap {
-        background: white;
+        background: blueviolet;
     }
 </style>
     <link rel="stylesheet" href="css_saya/style.css">
 </head>
 <body>
     <h1>Selamat Datang</h1>
-    <h1 style="color: grey">Form Data Karyawan</h1>
+    <h1 style="color: Red">Form Data Karyawan</h1>
     <form action="" method="post" id="form-data">
         <table>
             <tr class="ganjil">

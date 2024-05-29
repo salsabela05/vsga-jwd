@@ -49,9 +49,9 @@
     <!-- END BAGIAN NAVBAR -->
 
     <?php
-        $daftarKota = array("Lampung", "Jakarta", "Surabaya");   
+        $daftarKota = array("Lampung", "Jakarta", "Surabaya", "Medan", "Bali");   
     ?>
-    <!-- $daftarKotalain = array['Lampung', 'Jakarta', 'Surabaya']; -->
+    <!-- $daftarKotalain = array['Lampung', 'Jakarta', 'Surabaya', 'Medan', 'Bali']; -->
 
     <div class="container-fluid">
         <h4>Form Data Karyawan</h4>

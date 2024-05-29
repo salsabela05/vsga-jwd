@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Puji Barata</title>
+    <title>Form Salsabela Hanifa</title>
 
 <style>
     h1 {
@@ -22,7 +22,7 @@
         background: white;
     }
 </style>
-    <link rel="stylesheet" href="me/style.css">
+    <link rel="stylesheet" href="css_saya/style.css">
 </head>
 <body>
     <h1>Selamat Datang</h1>

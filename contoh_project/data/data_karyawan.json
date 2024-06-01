@@ -1,0 +1,32 @@
+[
+    {
+        "nik": "1",
+        "nama": "Budi",
+        "jenis-Kelamin": "Laki-laki",
+        "golongan": "I"
+    },
+    {
+        "nik": "2",
+        "nama": "Joko",
+        "jenis-Kelamin": "Laki-laki",
+        "golongan": "II"
+    },
+    {
+        "nik": "3",
+        "nama": "Wati",
+        "jenis-Kelamin": "Perempuan",
+        "golongan": "III"
+    },
+    {
+        "nik": "4",
+        "nama": "Indra",
+        "jenis-Kelamin": "Laki-laki",
+        "golongan": "I"
+    },
+    {
+        "nik": "5",
+        "nama": "David",
+        "jenis-Kelamin": "Laki-laki",
+        "golongan": "III"
+    }
+]

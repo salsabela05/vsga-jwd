@@ -1,60 +1,53 @@
 <?php
-//menulis variable di php, dimulai dengan tanda $
 // buat tampilan sesuai dengan tugas
-function hitungTarif($a, $b, $c)
+function hitungTarif($a, $b)
 {
-    //hasil perkalian tarif * harga
-    return $b * $c;
+  return $a * $b;
+}
+?>
+
+<html>
+
+<link rel="stylesheet" href="tugas_parkir.css">
+
+
+<?php
+
+if (isset($_GET['jumlah'])) {
+  // mengambil data dari URL
+  // panggil function hitungTarif
+  $noPolisi = $_GET['noPolisi'];
+  $lamaParkir = $_GET['lamaParkir'];
+  $harga = $_GET['harga'];
+  $hasil = hitungTarif($lamaParkir, $harga);
+  # code...
 }
 
 ?>
+<form action="" method="get">
+  <div class="wrapper">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarif Parkir</title>
-</head>
-
-<body>
-<div class="container">
-        <h1>Hitung Tarif Parkir</h1>
-        <form method="post" action="">
-            <label for="plateNumber">Nomor Polisi:</label>
-            <input type="text" id="plateNumber" name="plateNumber" required>
-
-            <label for="hours">Lama Parkir (jam):</label>
-            <input type="number" id="hours" name="hours" min="0" step="0.5" required>
-
-            <button type="submit">Hitung Tarif</button>
-        </form>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $plateNumber = $_POST['plateNumber'];
-            $hours = floatval($_POST['hours']);
-            $baseRate = 5000;
-            $hourlyRate = 3000;
-            $total = 0;
-
-            if ($hours <= 1) {
-                $total = $baseRate;
-            } else {
-                $total = $baseRate + ($hours - 1) * $hourlyRate;
-            }
-
-            echo "<div id='result'>";
-            echo "<h2>Detail Parkir</h2>";
-            echo "<p><strong>Nomor Polisi:</strong> $plateNumber</p>";
-            echo "<p><strong>Lama Parkir:</strong> $hours jam</p>";
-            echo "<p><strong>Tarif:</strong> Rp $total</p>";
-            echo "</div>";
-        }
-        ?>
+    <div class="input-box">
+      <input type="text" name="noPolisi" placeholder=" No polisi" />
     </div>
 
-    ?>
+    <div class="input-box">
+      <input type="text" name="lamaParkir" placeholder=" Lama parkir" />
+    </div>
 
-</body>
+    <div class="input-box">
+      <input type="text" name="harga" placeholder=" Tarif / jam" />
+    </div>
+
+    <div class="input-box">
+      <input type="submit" name="jumlah" value="Hitung" />
+    </div>
+
+    <div class="input-box">
+      <input type="text" name="" value="<?php print (isset($hasil)) ? $hasil : "Total"; ?>" readonly />
+    </div>
+
+  </div>
+</form>
 
 </html>
